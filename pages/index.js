@@ -1,65 +1,54 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
 
-export default function Home() {
+export default function Home(props) {
+  const router = useRouter()
+  console.log(router.asPath);
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className='lg:container mx-auto'>
+        <nav className='bg-blue'>
+        <div className='px-8 flex justify-between items-center h-16'>
+          <a className='text-white' href='#'>HOME</a>
+          <div className='flex justify-around items-center h-4 divide-white divide-x'>
+            <a className='text-white hover:bg-black px-3 transition-colors duration-300' href='#'>ABOUT</a>
+            <a className='text-white hover:bg-black px-3 transition-colors duration-300' href='#'>CONTACT US</a>
+            <a className='text-white hover:bg-black px-3 transition-colors duration-300' href='#'>SOLAR PANELS</a>
+          </div>
         </div>
-      </main>
+        </nav>
+        <main>
+          <div className='h-24 px-8 flex items-center border-b'>
+            <h1 className='text-xl font-bold'>Bristol Solar Potential</h1>
+          </div>
+          <div className='flex py-16 px-auto justify-center space-x-16 items-center'>
+            <div className='bg-gray-300 rounded flex flex-col justify-between items-center px-4 py-4'>
+              <img className='h-36 w-48' src='solar bristol.jpeg'/>
+              <div className='w-48 pt-8'>
+                <p>
+                  Use our interactive map to find a graphic representation of the solar potential for your area
+                </p>
+              </div>
+            </div>
+            <div className=' rounded flex flex-col justify-between items-center px-4 py-4'>
+              <img className='h-36 w-48' src='solar bristol.jpeg'/>
+              <div className='w-48 pt-8'>
+                <p>
+                  Use our interactive map to find a graphic representation of the solar potential for your area
+                </p>
+              </div>
+            </div>
+            <div className=' rounded flex flex-col justify-between items-center px-4 py-4'>
+              <img className='h-36 w-48' src='solar bristol.jpeg'/>
+              <div className='w-48 pt-8'>
+                <p>
+                  Use our interactive map to find a graphic representation of the solar potential for your area
+                </p>
+              </div>
+            </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+          </div>
+        </main>
+        <footer></footer>
     </div>
   )
 }
