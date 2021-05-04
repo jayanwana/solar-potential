@@ -2,7 +2,7 @@ import Nav from '../components/nav'
 import Footer from '../components/footer'
 import { useRouter } from 'next/router'
 import {useState} from 'react'
-import BeatLoader from 'react-spinners/BeatLoader'
+// import BeatLoader from 'react-spinners/BeatLoader'
 import { css } from "@emotion/react";
 
 export default function Map() {
@@ -59,7 +59,6 @@ export default function Map() {
         </div>
       </main>
       <Footer/>
-      <BeatLoader color={'#2F3970'} loading={loading} css={override} size={150} />
     </div>
   )
 }
