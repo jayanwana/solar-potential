@@ -9,7 +9,7 @@ export default function About(){
           <div className="py-6 md:py-12">
               <div className="container px-4 mx-auto">
                 <div className="text-center max-w-2xl mx-auto">
-                    <h1 className="text-3xl md:text-4xl font-medium font-main mb-2">About Us</h1>
+                    <h1 className="text-3xl md:text-4xl font-medium font-main mb-2">About</h1>
                 </div>
                 <div style={{backgroundImage: "url('solar-energy-companies.jpg')"}} className="mt-4 mx-auto max-w-6xl pt-6 flex justify-center h-64 bg-no-repeat bg-cover bg-right-top">
                     {/*<img src="solar-energy-companies.jpg" alt="mockup" className="d-block max-w-full h-64"/>*/}

@@ -41,7 +41,7 @@ export default function Map() {
       <main className='h-2/3'>
         <div className='h-24 px-8 flex items-between border-b'>
           <div className='container px-4 mx-auto md:flex md:items-center justify-between'>
-            <h1 className='text-xl font-bold'>Bristol Solar Potential Tables</h1>
+            <h1 className='text-3xl font-bold font-main'>Bristol Solar Potential Tables</h1>
             <div className='flex items-center space-x-2'>
               <input className='border-2 rounded px-2' placeholder='Enter Postcode' type='text' value={query} onChange={e => setQuery(e.target.value)}/>
               <i onClick={search} className="fas fa-search cursor-pointer"></i>
@@ -55,7 +55,7 @@ export default function Map() {
             <a className={`w-32 rounded h-10 text-center ${router.asPath === '/table'? 'bg-blue text-white' : 'bg-gray-300'}  flex items-center justify-center`} href='/table'>Table</a>
           </div>
           <div className='flex-grow '>
-          <iframe src={`https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/table/?location=11,${pos ? pos:'51.46735,-2.6141'}&basemap=jawg.streets&static=true&datasetcard=true`} width="1200" height="500" frameBorder="0"></iframe>
+          <iframe src={`https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/table/?location=11,${pos ? pos:'51.46735,-2.6141'}&basemap=jawg.streets&static=true&datasetcard=true`} width="900" height="500" frameBorder="0"></iframe>
           </div>
         </div>
       </main>

@@ -10,7 +10,7 @@ export default function Map() {
       <main className='h-2/3'>
         <div className='h-24 px-8 flex items-center border-b'>
           <div className='container px-4 mx-auto md:flex md:items-center'>
-            <h1 className='text-xl font-bold'>Bristol Solar Potential Map</h1>
+            <h1 className='text-3xl font-bold font-main'>Bristol Solar Potential Map</h1>
           </div>
         </div>
         <div className='container w-full px-4 mx-auto md:flex h-full border-b'>

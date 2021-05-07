@@ -35,7 +35,7 @@ export default function Panels() {
               <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                 <div className="flex flex-col justify-center">
 
-                  <div className="text-gray-900 font-bold text-xl mb-2">Green Match</div>
+                  <div className="text-gray-900 font-bold font-main text-xl mb-2">Green Match</div>
                   <p className="text-gray-700 text-base">To help guide your switch to solar energy, GreenMatch has gathered the most useful information about solar panels, including:</p>
                   <ul className="list-disc pl-5">
                     <li>The overall prices of solar panels in the UK</li>
@@ -58,7 +58,7 @@ export default function Panels() {
               <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                 <div className="flex flex-col justify-center">
 
-                  <div className="text-gray-900 font-bold text-xl mb-2">Energy Savings Trust</div>
+                  <div className="text-gray-900 font-bold font-main text-xl mb-2">Energy Savings Trust</div>
                   <p className="text-gray-700 text-base">Check our information and advice on home energy efficiency measures to keep your home warm, while reducing your carbon footprint and your energy bills.</p>
                   <ul className="list-disc pl-5">
                     <li>Cut your electricity bills</li>
