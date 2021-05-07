@@ -25,6 +25,7 @@ export default function Map() {
         console.log(data)
         if (data.status === 200) {
           let p = `${data.result.latitude},${data.result.longitude}`
+          console.log(p);
           setPos(p)
         }
         else {
@@ -54,7 +55,7 @@ export default function Map() {
             <a className={`w-32 rounded h-10 text-center ${router.asPath === '/table'? 'bg-blue text-white' : 'bg-gray-300'}  flex items-center justify-center`} href='/table'>Table</a>
           </div>
           <div className='flex-grow '>
-          <iframe src={`https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/table/?location=11,${pos ? pos:'51.46735,-2.6141'}&basemap=jawg.streets&static=false&datasetcard=false`} width="1200" height="500" frameBorder="0"></iframe>
+          <iframe src={`https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/table/?location=11,${pos ? pos:'51.46735,-2.6141'}&basemap=jawg.streets&static=true&datasetcard=true`} width="1200" height="500" frameBorder="0"></iframe>
           </div>
         </div>
       </main>

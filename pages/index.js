@@ -12,7 +12,7 @@ export default function Home(props) {
               <div className="container px-4 mx-auto">
 
                   <div className="text-center max-w-2xl mx-auto">
-                      <h1 className="text-3xl md:text-4xl font-medium mb-2">Experience the potential of solar.</h1>
+                      <h1 className="text-3xl md:text-4xl font-medium font-main mb-2">Experience the potential of solar.</h1>
 
                   </div>
                   <div className="mt-4 mx-auto max-w-5xl pt-6">

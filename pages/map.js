@@ -19,7 +19,7 @@ export default function Map() {
             <a className={`w-32 rounded h-10 text-center ${router.asPath === '/table'? 'bg-blue text-white' : 'bg-gray-300'}  flex items-center justify-center`} href='/table'>Table</a>
           </div>
           <div className='flex-grow flex justify-center'>
-          <iframe src="https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/custom/?location=11,51.46735,-2.6141&basemap=jawg.streets&static=false&datasetcard=false" width="900" height="650" frameBorder="0"></iframe>
+          <iframe src="https://opendata.bristol.gov.uk/explore/embed/dataset/solar-potential/custom/?location=11,51.46735,-2.6141&basemap=jawg.streets&static=false&datasetcard=false" width="1200" height="1050" frameBorder="0"></iframe>
           </div>
         </div>
       </main>
