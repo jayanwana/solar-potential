@@ -19,7 +19,7 @@ export default function Map() {
     console.log(query);
     if (query) {
       setLoading(true)
-      fetch(`http://api.postcodes.io/postcodes/${query}`)
+      fetch(`https://api.postcodes.io/postcodes/${query}`)
       .then(response => response.json())
       .then(data => {
         console.log(data)
